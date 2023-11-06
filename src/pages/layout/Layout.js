@@ -2,14 +2,19 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import './Layout.css'
-import Contents from './Contents'
+import MainRouter from '../../Router/MainRouter'
 
 function Layout() {
     return (
         <div className='layout'>
 			<Header />
-			<Contents />
+			<main>
+				<div className='layContent'>
+					<MainRouter />
+				</div>
+			</main>
 			<Footer />
+
 		</div>
     )
 }
